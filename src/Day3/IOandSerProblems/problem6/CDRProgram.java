@@ -1,13 +1,17 @@
 package Day3.IOandSerProblems.problem6;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class CDRProgram {
     public static void main(String[] args) {
-
-        String A_Number = getUserInput("Enter A_Number: ");
-        String B_Number = getUserInput("Enter B_Number: ");
-        int duration = Integer.parseInt(getUserInput("Enter call duration (minutes): "));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter A_Number: ");
+        String A_Number = sc.next();
+        System.out.println("Enter B_Number: ");
+        String B_Number = sc.next();
+        System.out.println("Enter call duration (minutes): ");
+        int duration = Integer.parseInt(sc.next());
 
 
         CDR cdr = new CDR(A_Number, B_Number, duration);
@@ -28,13 +32,7 @@ public class CDRProgram {
 
 
         System.out.println("CDR Information:");
-        System.out.println(cdr.toString());
-    }
-
-    private static String getUserInput(String prompt) {
-        java.util.Scanner scanner = new java.util.Scanner(System.in);
-        System.out.print(prompt);
-        return scanner.nextLine();
+        System.out.println(cdr);
     }
 }
 
