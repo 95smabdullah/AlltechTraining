@@ -3,9 +3,9 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 calculatedCharge.txt
-src/io.txt
-src/rated_cdr.txt
-src/student_records.ser
+io.txt
+rated_cdr.txt
+student_records.ser
 
 ### Eclipse ###
 .apt_generated
