@@ -2,10 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-calculatedCharge.txt
-io.txt
-rated_cdr.txt
-student_records.ser
+
 
 ### Eclipse ###
 .apt_generated
@@ -31,3 +28,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/test/

@@ -11,7 +11,7 @@ public class CopierChar {
         System.out.println("Enter destination file name");
         String opt = "Y";
         String desFileName = sc.next();
-        File opFile = new File("C://Users/sabdu/"+desFileName);
+        File opFile = new File("./test/"+desFileName);
         if(opFile.exists()){
             System.out.println("There is already a file named "+desFileName+"Do you wish to overwite? Y/N");
             opt = sc.next();
@@ -19,8 +19,8 @@ public class CopierChar {
         if(opt.equalsIgnoreCase("Y")){
             System.out.println("continuing with copying");
             try (
-                    FileReader fr = new FileReader("C://Users/sabdu/"+srcFileName);
-                    FileWriter fw = new FileWriter("C://Users/sabdu/"+desFileName)
+                    FileReader fr = new FileReader("./test/"+srcFileName);
+                    FileWriter fw = new FileWriter("./test/"+desFileName)
             ) {
                 int i;
                 while((i = fr.read())!=-1){

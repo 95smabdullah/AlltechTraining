@@ -12,7 +12,7 @@ public class CopierByte {
         System.out.println("Enter destination file name");
         String opt = "Y";
         String desFileName = sc.next();
-        File opFile = new File("C://Users/sabdu/"+desFileName);
+        File opFile = new File("./test/"+desFileName);
                 if(opFile.exists()){
                     System.out.println("There is already a file named "+desFileName+"Do you wish to overwite? Y/N");
                     opt = sc.next();
@@ -20,8 +20,8 @@ public class CopierByte {
         if(opt.equalsIgnoreCase("Y")){
             System.out.println("continuing with copying");
             try (
-                    FileInputStream fis = new FileInputStream("C://Users/sabdu/"+srcFileName);
-                    FileOutputStream fos = new FileOutputStream("C://Users/sabdu/"+desFileName)
+                    FileInputStream fis = new FileInputStream("./test/"+srcFileName);
+                    FileOutputStream fos = new FileOutputStream("./test/"+desFileName)
             ) {
                 int i;
                 while((i = fis.read())!=-1){

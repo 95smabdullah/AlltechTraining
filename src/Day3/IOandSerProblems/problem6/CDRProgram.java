@@ -17,7 +17,7 @@ public class CDRProgram {
         CDR cdr = new CDR(A_Number, B_Number, duration);
 
 
-        try (FileWriter writer = new FileWriter("calculatedCharge.txt")) {
+        try (FileWriter writer = new FileWriter("..calculatedCharge.txt")) {
             writer.write("Calculated Charge: $" + cdr.calculatedCharge);
         } catch (IOException e) {
             e.printStackTrace();

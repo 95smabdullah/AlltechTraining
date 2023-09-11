@@ -9,7 +9,7 @@ import java.util.*;
 
 public class DisplayStudentRecords {
     public static void main(String[] args) {
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("C://Users/sabdu/student_records.ser"))) {
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("./test/student_records.ser"))) {
             List<Student> students = (List<Student>) ois.readObject();
 
             if (students.isEmpty()) {
